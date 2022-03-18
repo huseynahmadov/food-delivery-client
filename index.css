@@ -10,6 +10,20 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d63626;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
 .container {
   padding: 25px;
   height: 100vh;
@@ -287,9 +301,6 @@ nav ul li a:hover {
   width: 421px;
   height: 556.74px;
   transform: rotate(22.82deg);
-  /* width: 100%;
-  position: absolute;
-  transform: rotate(-22.82deg); */
 }
 
 .description-section .description-right .kfc-image img {
@@ -298,7 +309,21 @@ nav ul li a:hover {
   position: absolute;
   top: 10%;
   left: -25%;
+}
 
-  /* width: 100%;
-  height: 400px; */
+.pizza-image {
+  position: relative;
+  background-color: #d63626;
+  border-radius: 50px;
+  width: 421px;
+  height: 556.74px;
+  transform: rotate(-22.82deg);
+}
+
+.pizza-image img {
+  transform: rotate(22.82deg);
+  width: 130%;
+  position: absolute;
+  top: 2%;
+  left: -9%;
 }
