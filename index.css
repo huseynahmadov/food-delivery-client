@@ -245,6 +245,7 @@ nav ul li a:hover {
 .description-section {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 150px;
   padding: 0 50px;
 }
 .description-section .description-left {
