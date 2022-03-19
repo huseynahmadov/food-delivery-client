@@ -8,6 +8,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -190,6 +191,7 @@ nav ul li a:hover {
 .features-section {
   margin-top: 42px;
   height: 100vh;
+  padding: 0 25px;
 }
 .features-section > p:first-child {
   font-size: 40px;
@@ -268,7 +270,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
-  padding: 0 50px;
+  padding: 0 60px;
 }
 .description-section .description-left {
   width: 40%;
@@ -333,9 +335,6 @@ nav ul li a:hover {
   position: relative;
   margin-top: 170px;
   height: 30rem;
-  margin-left: -50px;
-  margin-right: -50px;
-  margin-bottom: -50px;
 }
 
 .footer-top {
