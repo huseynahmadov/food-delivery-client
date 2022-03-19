@@ -188,7 +188,7 @@ nav ul li a:hover {
 }
 
 .features-section {
-  margin-top: 82px;
+  margin-top: 42px;
   height: 100vh;
 }
 .features-section > p:first-child {
@@ -199,6 +199,11 @@ nav ul li a:hover {
   font-weight: 900;
   line-height: 70px;
   letter-spacing: 0.03em;
+  width: 100%;
+  max-width: 454px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  line-height: 50px;
 }
 
 .features-section > p:nth-child(2) {
@@ -210,6 +215,7 @@ nav ul li a:hover {
   width: 780px;
   margin: 0 auto;
   margin-bottom: 45px;
+  line-height: 30px;
 }
 
 .features-section .cards {
@@ -227,6 +233,8 @@ nav ul li a:hover {
   display: flex;
   width: 327px;
   height: 386px;
+  /* width: 357px;
+  height: 406px; */
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -270,6 +278,7 @@ nav ul li a:hover {
   font-size: 50px;
   font-weight: 900;
   margin-bottom: 20px;
+  line-height: 70px;
 }
 
 .description-section .description-left > p {
@@ -284,14 +293,6 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   width: 40%;
-  /* margin-right: 100px; */
-  /* position: relative;
-  background-color: #d63626;
-  border-radius: 50px;
-  margin-right: 100px;
-  transform: rotate(22.82deg);
-  width: 500px;
-  height: 556.74px; */
 }
 
 .description-section .description-right .kfc-image {
@@ -326,4 +327,66 @@ nav ul li a:hover {
   position: absolute;
   top: 2%;
   left: -9%;
+}
+
+.footer {
+  position: relative;
+  margin-top: 170px;
+  height: 30rem;
+  margin-left: -50px;
+  margin-right: -50px;
+  margin-bottom: -50px;
+}
+
+.footer-top {
+  position: absolute;
+  max-width: 1066px;
+  height: 372px;
+  border-radius: 50px;
+  background: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+  top: -170px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.ft-left img,
+.ft-right img {
+  width: 200px;
+  height: 200px;
+}
+.ft-center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ft-center > h2 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-bottom: 18px;
+}
+
+.ft-center > button {
+  width: 220px;
+  height: 60px;
+  background: #fb9300;
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 100%;
+  background: #181617;
 }
