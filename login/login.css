@@ -18,15 +18,17 @@ header {
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header div {
     padding: 20px;
 }
 
-.header-container .header-left img {
-    color: white;
+header .header-left {
+    margin-top: 9px;
 }
+
 
 .main-content {
     margin-top: 50px;
@@ -34,6 +36,58 @@ header div {
     height: 100vh;
 
 }
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-left {
+        display: none;
+    }
+
+    .main-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signup .btns{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-container .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-right .login-container .inputs input {
+        width: 50%;
+    }
+
+    .signup-container {
+    }
+
+    .signup-container .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .main-right .signup-container .inputs input {
+        width: 50%;
+    }
+}
+
 
 .main-left {
     background-color: #EB5757;
@@ -54,20 +108,17 @@ header div {
     margin-top: -200px;
 }
 
-@media (max-width:1400px) {
-    .main-right {
-        margin-top: 100px;
-    }
-}
 
 .main-right .signup {
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-right .login-container {
     display: flex;
     justify-content: center;
 
 }
-
-
 
 .main-right .signup button {
     width: 200px;
@@ -134,4 +185,12 @@ header div {
 
 .signup-container {
     display: none;
+}
+
+@media (max-width: 1300px) {
+    .login-btn {
+        display: flex;
+        margin: auto;
+        width: 50%;
+    }
 }
