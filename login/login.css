@@ -53,7 +53,18 @@ header .header-left {
   }
 
   .signup .btns {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-left {
+    display: none;
+  }
+
+  .main-right {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
