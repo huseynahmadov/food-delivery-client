@@ -54,7 +54,8 @@ header .header-left {
         align-items: center;
     }
 
-    .signup .btns{
+    .signup .btns {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -71,8 +72,7 @@ header .header-left {
         width: 50%;
     }
 
-    .signup-container {
-    }
+    
 
     .signup-container .inputs {
         display: flex;
@@ -87,6 +87,8 @@ header .header-left {
         width: 50%;
     }
 }
+
+
 
 
 .main-left {
