@@ -1,10 +1,27 @@
-const restaurans = [
+export const categories = [
+  {
+    id: 1,
+    category: "All"
+  },
+
+  {
+    id: 2,
+    category: "Fast Food"
+  },
+
+  {
+    id: 3,
+    category: "Pizza"
+  },
+]
+
+export const restaurants = [
   {
     id: "r1",
     name: "Coffee Mania",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
-    delivery: 09,
+    delivery: 9,
     type: "Coffee",
   },
   {
@@ -12,7 +29,7 @@ const restaurans = [
     name: "Burger King",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
-    delivery: 09,
+    delivery: 9,
     type: "Fast Food",
   },
   {
@@ -20,7 +37,7 @@ const restaurans = [
     name: "Mc Donalds",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
-    delivery: 09,
+    delivery: 9,
     type: "Fast Food",
   },
   {
@@ -28,7 +45,7 @@ const restaurans = [
     name: "Maharaja Restaurant",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
-    delivery: 09,
+    delivery: 9,
     type: "Indian Food",
   },
   {
@@ -36,7 +53,7 @@ const restaurans = [
     name: "Dera Restaurant",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
-    delivery: 09,
+    delivery: 9,
     type: "Indian Food",
   },
   {
@@ -44,7 +61,7 @@ const restaurans = [
     name: "Hong Kong Chinese Restaurant",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
-    delivery: 09,
+    delivery: 9,
     type: "Indian Food",
   },
   {
@@ -52,7 +69,7 @@ const restaurans = [
     name: "Papa Johns",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
-    delivery: 09,
+    delivery: 9,
     type: "Pizza",
   },
   {
@@ -60,7 +77,7 @@ const restaurans = [
     name: "Dominos",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
-    delivery: 09,
+    delivery: 9,
     type: "Pizza",
   },
 ];
