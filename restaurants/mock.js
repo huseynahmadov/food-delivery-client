@@ -1,4 +1,3 @@
-
 export const restaurants = [
   {
     id: "r1",
@@ -6,8 +5,8 @@ export const restaurants = [
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
-    type: "Fast Food",
-    img: "/public/images/restaurants/coffee-cup.gif"
+    type: "Coffee",
+    img: "../public/images/restaurants/coffee-mania.png",
   },
   {
     id: "r2",
@@ -16,7 +15,7 @@ export const restaurants = [
     price: 5,
     delivery: 9,
     type: "Fast Food",
-    img: "/public/images/restaurants/burger.png"
+    img: "../public/images/restaurants/burgur-king.svg",
   },
   {
     id: "r3",
@@ -25,6 +24,7 @@ export const restaurants = [
     price: 5,
     delivery: 9,
     type: "Fast Food",
+    img: "../public/images/restaurants/mc-dolands.png",
   },
   {
     id: "r4",
@@ -32,7 +32,8 @@ export const restaurants = [
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
-    type: "Fast Food",
+    type: "Indian Food",
+    img: "../public/images/restaurants/maharaja.jpg",
   },
   {
     id: "r5",
@@ -40,15 +41,17 @@ export const restaurants = [
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
-    type: "Pizza",
+    type: "Indian Food",
+    img: "../public/images/restaurants/dera.jpg",
   },
   {
     id: "r6",
-    name: "Hong Kong Chinese Restaurant",
+    name: "Hong Kong",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
-    type: "Pizza",
+    type: "Chinese Food",
+    img: "../public/images/restaurants/hong-kong.jpg",
   },
   {
     id: "r7",
@@ -56,7 +59,8 @@ export const restaurants = [
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
-    type: "Pizza",
+    type: "Fast Food",
+    img: "../public/images/restaurants/papa-johns.svg",
   },
   {
     id: "r8",
@@ -64,6 +68,7 @@ export const restaurants = [
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
-    type: "Pizza",
+    type: "Fast Food",
+    img: "../public/images/restaurants/dominos.png",
   },
 ];
