@@ -1,19 +1,3 @@
-export const categories = [
-  {
-    id: 1,
-    category: "All"
-  },
-
-  {
-    id: 2,
-    category: "Fast Food"
-  },
-
-  {
-    id: 3,
-    category: "Pizza"
-  },
-]
 
 export const restaurants = [
   {
@@ -22,7 +6,8 @@ export const restaurants = [
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
-    type: "Coffee",
+    type: "Fast Food",
+    img: "/public/images/restaurants/coffee-cup.gif"
   },
   {
     id: "r2",
@@ -31,6 +16,7 @@ export const restaurants = [
     price: 5,
     delivery: 9,
     type: "Fast Food",
+    img: "/public/images/restaurants/burger.png"
   },
   {
     id: "r3",
@@ -46,7 +32,7 @@ export const restaurants = [
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
-    type: "Indian Food",
+    type: "Fast Food",
   },
   {
     id: "r5",
@@ -54,7 +40,7 @@ export const restaurants = [
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
-    type: "Indian Food",
+    type: "Pizza",
   },
   {
     id: "r6",
@@ -62,7 +48,7 @@ export const restaurants = [
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
-    type: "Indian Food",
+    type: "Pizza",
   },
   {
     id: "r7",
