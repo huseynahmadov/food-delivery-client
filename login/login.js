@@ -6,5 +6,4 @@ $("#signup-btn").on("click", function () {
 $("#login-btn").on("click", function () {
   $(".login-container").css("display", "block");
   $(".signup-container").css("display", "none");
-  $(".signup").css("margin-top", "100px");
 });

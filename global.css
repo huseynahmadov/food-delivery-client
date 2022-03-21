@@ -30,11 +30,19 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: #d63626;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
+  border-radius: 4px;
 }
+
+/* 
+=================================
+Loader
+=================================
+*/
 
 /* 
 =================================
@@ -47,7 +55,7 @@ Header
   height: 100%;
   width: 100%;
   /* padding: 40px 57px; */
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 header {
