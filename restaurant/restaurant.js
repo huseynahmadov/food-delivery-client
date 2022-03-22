@@ -1,0 +1,1 @@
+import forwardData from "../restaurants/restaurants.js";

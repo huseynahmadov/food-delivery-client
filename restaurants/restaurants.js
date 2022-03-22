@@ -64,35 +64,20 @@ $(".list-item").on("click", function () {
 });
 
 $(".cart").on("click", function (e) {
-  const id = $(this).data("id");
-  console.log(id);
   e.preventDefault();
-  window.history.pushState({}, null, `/restaurants/${id}`);
+  const id = $(this).data("id");
+  const data = restaurants.filter((item) => item.id === id);
   window.history.pushState({ data }, null, `/restaurant/restaurant.html`);
   handleLocation();
 });
-
-const handleLocation = async () => {
-  // const data = restaurants.filter((item) => {
-  //   item.id === id;
-  // });
-  // window.location.href = "/restaurant/restaurant.html";
-  // const path = window.location.pathname;
-  // console.log(path);
-  // const html = await fetch("../restaurant/restaurant.html").then((data) =>
-  //   data.text()
-  // );
-  // $(".main-container-wrapper").empty();
-  // $(".main-container-wrapper").append(html);
-  // console.log(html);
+export default forwardData = () => {
+  const currentState = history.state.data;
+  return currentState;
 };
-// window.onpopstate = handleLocation;
 
+const handleLocation = () => {
+  window.location.href = "/restaurant/restaurant.html";
+  history.back();
+};
 
-const route = (event) => {
-  event = event || window.event;
-  event.preventDefault();
-  window.history.pushState({}, "", event.target.href)
-}
-
-window.route = route;
+window.onpopstate = handleLocation;
