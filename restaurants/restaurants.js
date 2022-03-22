@@ -3,9 +3,10 @@ import { restaurants } from "./mock.js";
 const categoryItems = [];
 
 function showItems(item) {
-  const path = item.name.split(" ");
+  // const path = item.name.split(" ");
+  // <div class="cart" data-id=${path.join("").toLowerCase()}>
   $(".mcw-right").append(`
-        <div class="cart" data-id=${path.join("").toLowerCase()}>
+        <div class="cart" data-id=${item.id}>
         <div class="cart-wrapper">
         <div class="cart-img">
         <img src="${item.img}" alt="">
@@ -57,7 +58,27 @@ $(".list-item").on("click", function () {
   }
 });
 
-$(".cart").on("click", function () {
+$(".cart").on("click", function (e) {
   const id = $(this).data("id");
-  // document.location.href = `restaurants/${id}`;
+  console.log(id);
+  // e.preventDefault();
+  // window.history.pushState({}, null, `/restaurants/${id}`);
+  // window.history.pushState({ data }, null, `/restaurant/restaurant.html`);
+  // handleLocation();
 });
+
+// const handleLocation = async () => {
+//   const data = restaurants.filter((item) => {
+//     item.id === id;
+//   });
+//   window.location.href = "/restaurant/restaurant.html";
+//   // const path = window.location.pathname;
+//   // console.log(path);
+//   // const html = await fetch("../restaurant/restaurant.html").then((data) =>
+//   //   data.text()
+//   // );
+//   // $(".main-container-wrapper").empty();
+//   // $(".main-container-wrapper").append(html);
+//   // console.log(html);
+// };
+// window.onpopstate = handleLocation;
