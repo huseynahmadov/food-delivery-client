@@ -1,4 +1,4 @@
-import { restaurants } from "./mock.js";
+import { restaurants } from "../restaurants/mock.js";
 
 const categoryItems = [];
 
@@ -70,7 +70,8 @@ $(".cart").on("click", function (e) {
   window.history.pushState({ data }, null, `/restaurant/restaurant.html`);
   handleLocation();
 });
-export default forwardData = () => {
+
+  export const forwardData = () => {
   const currentState = history.state.data;
   return currentState;
 };
