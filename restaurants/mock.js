@@ -17,7 +17,7 @@ export const restaurants = [
         img: "/public/images/restaurants/coffee-mania.png",
       },
       {
-        id: "p1",
+        id: "p2",
         name: "cappucino",
         price: 5,
         quantity: 1,
@@ -44,7 +44,7 @@ export const restaurants = [
         img: "../public/images/restaurants/burgur-king.svg",
       },
       {
-        id: "p1",
+        id: "p2",
         name: "cappucino",
         price: 5,
         quantity: 1,
