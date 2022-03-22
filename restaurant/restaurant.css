@@ -1,3 +1,276 @@
 .container {
   padding: 25px;
 }
+
+.main-container {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.main-top {
+  height: 600px !important;
+}
+
+.main-container .main-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-left h3 {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: .03px;
+  font-weight: 700;
+  color: #4F4F4F;
+}
+
+.main-left p {
+  font-size: 14px;
+  letter-spacing: .03px;
+  font-weight: 500;
+  color: #828282;
+}
+
+.main-content {
+  padding: 30px 20px 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content .main-right-flex {
+  display: flex;
+}
+
+
+
+.main-middle {
+  margin-right: 50px;
+}
+
+.main-right-flex .main-middle p:first-child {
+ 
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: .03px;
+  color: #828282;
+  font-weight: 500;
+}
+
+.main-right-flex .main-middle p:nth-child(2) {
+  letter-spacing: .03px;
+  color: #828282;
+  font-weight: 500;
+}
+
+.main-right {
+  margin-left: 50px;
+  display: flex;
+}
+
+.main-right p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  color: #D63626;
+  border: 1px solid #D63626;
+  border-radius: 5px;
+  width: 72px;
+  height: 51px;
+  cursor: pointer;
+}
+
+.main-right button {
+  width: 72px;
+  height: 51px;
+  background-color: #D63626;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-left: 28px;
+  cursor: pointer;
+}
+
+.main-right button:hover {
+  opacity: .8;
+  transition: .4s ease-in-out;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 38px;
+}
+
+.products-left {
+  width: 60%;
+  height: 446px;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
+
+.products-left h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 3%;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 20px;
+}
+
+.products-left .product img {
+  width: 57px;
+  height: 53px;
+}
+
+.products-left .product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-left .product div:first-child  {
+  display: flex;
+  margin: 30px;
+}
+
+.btn-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.btn-price button {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 2px solid #BDBDBD;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-price button:hover {
+  background-color: #6FCF97;
+  transition: .4s ease-in-out;
+  color: #fff;
+}
+
+.products-container {
+  padding: 15px;
+}
+
+
+
+.products-right {
+  width: 35%;
+  background-color: #f3f4f6;
+}
+
+.products-right .product-count {
+  border-bottom: 1px solid #E0E0E0;;
+}
+
+.products-right .product-count span {
+  color: #D63626;
+}
+
+.products-right .product-left {
+  display: flex;
+  align-items: center;
+}
+
+.products-right .product-items .product-left div p {
+  margin-left: 10px;
+}
+
+.products-right .product-left img {
+  width: 45px;
+  height: 45px;
+}
+
+.product-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  position: relative;
+  flex-direction: row-reverse;
+  padding-bottom: 10px;
+}
+
+.product-items {
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.product-items .delete-item img:hover {
+  cursor: pointer;
+}
+
+.product-right {
+  background-color: #ffff;
+  border-radius: 50px;
+  width: 29px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1400px) {
+  .product-right {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .product-right {
+    margin-left: 10rem;
+  }
+}
+.checkout {
+  display:flex;
+  background-color: #D63626;
+  border-radius: 100px;
+  height: 47px;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 100px;
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+}
+
+.checkout:hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.4s;
+}
+
+
+.checkout div {
+  padding: 12px;
+}
+
+.checkout .checkout-title p {
+  color: #ffff;
+}
+
+.checkout .checkout-total {
+  background-color: #ffff;
+  border-radius: 100px;
+  color: #D63626;
+  width: 135px;
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+  margin: 3px;
+}
+
+.footer-bottom {
+  margin-top: 70px;
+}

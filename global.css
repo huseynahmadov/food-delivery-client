@@ -12,11 +12,22 @@ body {
 }
 
 li {
+  transition: ease-in-out 0.4s;
   list-style: none;
+}
+
+li:hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.4s;
 }
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  
+  color: #d63626;
 }
 
 ::-webkit-scrollbar {
