@@ -34,6 +34,7 @@ restaurants.map((item) => {
 });
 // Uniqe category list
 [...new Set(categoryItems)].map((category) => {
+  $(`.list-item[data-id="All"`).addClass("active");
   $(".categories").append(`
     <li class="list-item" data-id='${category}'>
     <img src="../public/images/restaurants/list-img.svg" alt="list-icon">
@@ -45,12 +46,16 @@ restaurants.map((item) => {
 $(".list-item").on("click", function () {
   var dataId = $(this).attr("data-id");
   $(".mcw-right").empty();
+  $(`.list-item`).removeClass("active");
 
   for (let restaurant of restaurants) {
     if (dataId === restaurant.type) {
       showItems(restaurant);
+      $(`.list-item[data-id="${dataId}"`).addClass("active");
     } else if (dataId === "All") {
       $(".mcw-right").empty();
+      $(`.list-item[data-id="${dataId}"`).addClass("active");
+
       restaurants.map((item) => {
         showItems(item);
       });
