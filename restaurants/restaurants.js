@@ -55,7 +55,6 @@ $(".list-item").on("click", function () {
     } else if (dataId === "All") {
       $(".mcw-right").empty();
       $(`.list-item[data-id="${dataId}"`).addClass("active");
-
       restaurants.map((item) => {
         showItems(item);
       });
@@ -64,21 +63,8 @@ $(".list-item").on("click", function () {
 });
 
 $(".cart").on("click", function (e) {
-  e.preventDefault();
   const id = $(this).data("id");
-  const data = restaurants.filter((item) => item.id === id);
-  window.history.pushState({ data }, null, `/restaurant/restaurant.html`);
-  handleLocation();
-});
-
-  export const forwardData = () => {
-  const currentState = history.state.data;
-  return currentState;
-};
-
-const handleLocation = () => {
+  const item = restaurants.filter((item) => item.id === id);
+  localStorage.setItem("res", JSON.stringify(item));
   window.location.href = "/restaurant/restaurant.html";
-  history.back();
-};
-
-window.onpopstate = handleLocation;
+});

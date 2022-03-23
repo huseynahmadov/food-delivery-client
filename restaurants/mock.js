@@ -6,7 +6,25 @@ export const restaurants = [
     price: 5,
     delivery: 9,
     type: "Coffee",
-    img: "../public/images/restaurants/coffee-mania.png",
+    img: "/public/images/restaurants/coffee-mania.png",
+    products: [
+      {
+        id: "p1",
+        name: "cappucino",
+        price: 5,
+        quantity: 1,
+        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, labore.",
+        img: "/public/images/restaurants/coffee-mania.png",
+      },
+      {
+        id: "p1",
+        name: "cappucino",
+        price: 5,
+        quantity: 1,
+        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, labore.",
+        img: "/public/images/restaurants/coffee-mania.png",
+      },
+    ],
   },
   {
     id: "r2",
@@ -16,6 +34,24 @@ export const restaurants = [
     delivery: 9,
     type: "Fast Food",
     img: "../public/images/restaurants/burgur-king.svg",
+    products: [
+      {
+        id: "p1",
+        name: "Burger KIng",
+        price: 5,
+        quantity: 1,
+        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, labore.",
+        img: "../public/images/restaurants/burgur-king.svg",
+      },
+      {
+        id: "p1",
+        name: "cappucino",
+        price: 5,
+        quantity: 1,
+        desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, labore.",
+        img: "../public/images/restaurants/burgur-king.svg",
+      },
+    ],
   },
   {
     id: "r3",
