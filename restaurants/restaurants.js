@@ -62,7 +62,7 @@ $(".list-item").on("click", function () {
   }
 });
 
-$(".cart").on("click", function (e) {
+$(".cart").on("click", function () {
   const id = $(this).data("id");
   const item = restaurants.filter((item) => item.id === id);
   localStorage.setItem("res", JSON.stringify(item));

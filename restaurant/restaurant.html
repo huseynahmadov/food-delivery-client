@@ -13,13 +13,17 @@
       <div class="header-container-wrapper">
         <header>
           <div class="header-left">
-            <a href="index.html">
+            <a href="../index.html">
               <img src="/public/images/foodylogo.svg" alt="" />
             </a>
             <nav>
               <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/restaurants/restaurant.html">Restaurants</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                  <a href="/restaurants/restaurant.html" style="color: #d63626"
+                    >Restaurants</a
+                  >
+                </li>
                 <li><a href="/about/about.html">About Us</a></li>
                 <li><a href="/howitworks/hiw.html">How it works</a></li>
                 <li><a href="/faqs/faqs.html">FAQs</a></li>
@@ -46,18 +50,18 @@
         </div>
 
         <div class="main-content">
-          <div class="main-left">
+          <div class="mc-left">
             <h3>Papa John's Pizza Restaurant</h3>
             <p>19 Nizami Street, Sabail, Baku</p>
           </div>
 
-          <div class="main-right-flex">
-            <div class="main-middle">
+          <div class="mc-right">
+            <div class="mcr-desc">
               <p>Cuisine</p>
               <p>Pizza, Drink, Hotdog, Sendvich, Roll</p>
             </div>
 
-            <div class="main-right">
+            <div class="mcr-btns">
               <p>$5 Delivery</p>
 
               <a href="/restaurants/restaurant.html">
@@ -71,62 +75,20 @@
       <div class="products">
         <div class="products-left">
           <h3>Products</h3>
-          <!--  -->
         </div>
+
         <div class="products-right">
-          <div class="products-container">
-            <div class="product-count">
-              <img src="/public/images/product-count.svg" alt="" />
-              <span>2 items</span>
-            </div>
+          <div class="product-count">
+            <img src="/public/images/product-count.svg" alt="" />
+            <span id="items-count">0 items</span>
+          </div>
 
-            <!--ITEM 1-->
-            <div class="product-items">
-              <div class="delete-item">
-                <img src="/public/images/deleteitem.svg" alt="" />
-              </div>
-
-              <div class="product-right">
-                <span>+</span>
-                <p>1</p>
-                <span>-</span>
-              </div>
-
-              <div class="product-left">
-                <img src="/public/images/description-pizza.svg" alt="" />
-                <div>
-                  <p>Margarita Pizza</p>
-                  <p>$15.90</p>
-                </div>
-              </div>
-            </div>
-
-            <!--ITEM 2-->
-            <div class="product-items">
-              <div class="delete-item">
-                <img src="/public/images/deleteitem.svg" alt="" />
-              </div>
-
-              <div class="product-right">
-                <span>+</span>
-                <p>1</p>
-                <span>-</span>
-              </div>
-
-              <div class="product-left">
-                <img src="/public/images/description-pizza.svg" alt="" />
-                <div>
-                  <p>Margarita Pizza</p>
-                  <p>$15.90</p>
-                </div>
-              </div>
-            </div>
-
+          <div class="pr-flex">
+            <div class="pr-container"></div>
             <div class="checkout">
               <div class="checkout-title">
                 <p>Checkout</p>
               </div>
-
               <div class="checkout-total">
                 <p>$37.40</p>
               </div>
