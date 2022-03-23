@@ -78,13 +78,14 @@ Main TOP
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 19px;
   color: #d63626;
   border: 1px solid #d63626;
   border-radius: 5px;
   width: 72px;
   height: 51px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .main-content .mc-right .mcr-btns button {
@@ -97,6 +98,7 @@ Main TOP
   color: #fff;
   margin-left: 28px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .main-content .mc-right .mcr-btns button:hover {
@@ -207,6 +209,8 @@ Products Right
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 446px;
+  overflow-y: auto;
 }
 .pr-container {
   padding: 15px;
@@ -336,6 +340,7 @@ Products Right
 
 @media screen and (min-width: 1400px) {
   .product-item-count {
-    margin-left: 10rem;
+    margin-left: auto;
+    margin-right: 2rem;
   }
 }
