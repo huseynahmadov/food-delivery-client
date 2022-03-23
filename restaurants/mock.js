@@ -9,7 +9,7 @@ export const restaurants = [
     img: "/public/images/restaurants/coffee-mania.png",
     products: [
       {
-        id: "p1",
+        id: "c1",
         name: "Americano 200 ml",
         price: 2.5,
         quantity: 1,
@@ -17,7 +17,7 @@ export const restaurants = [
         img: "/public/images/restaurants/coffee-mania.png",
       },
       {
-        id: "p2",
+        id: "c2",
         name: "Latte 200 ml",
         price: 2.5,
         quantity: 1,
@@ -36,7 +36,7 @@ export const restaurants = [
     img: "../public/images/restaurants/burgur-king.svg",
     products: [
       {
-        id: "p1",
+        id: "b1",
         name: "Qrill Chicken Barbekyu",
         price: 6.9,
         quantity: 1,
@@ -44,7 +44,7 @@ export const restaurants = [
         img: "../public/images/restaurants/qrill-chicken.avif",
       },
       {
-        id: "p2",
+        id: "b2",
         name: "Chessy Mary",
         price: 7.2,
         quantity: 1,
