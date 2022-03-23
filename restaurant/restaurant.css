@@ -207,29 +207,29 @@ Products Right
 .products-right {
   width: 35%;
   background-color: #f3f4f6;
-  height: 446px;
+  height: 500px;
   overflow-y: auto;
-}
-.pr-container {
   padding: 15px;
 }
-.pr-flex {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.products-right .product-count {
-  border-bottom: 1px solid #e0e0e0;
+
+.product-right-count {
   display: flex;
   align-items: center;
+  gap: 10px;
+  color: #d63626;
+  letter-spacing: .03em;
+  font-weight: 500;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.products-right .product-count span {
-  color: #d63626;
-  padding: 4px 10px 0px;
-  line-height: 40px;
+.product-right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 95%;
 }
+
+
 
 .products-right .product-item-desc {
   display: flex;
