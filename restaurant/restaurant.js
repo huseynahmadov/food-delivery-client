@@ -1,14 +1,15 @@
 $(document).ready(function () {
   const initialState = { items: [], totalPrice: 0, totalQuantity: 0 };
   const data = JSON.parse(localStorage.getItem("res"));
-  const basket = JSON.parse(localStorage.getItem("basket"));
   let newItems = initialState.items.slice();
 
   const updateBasket = () => {
+    const basket = JSON.parse(localStorage.getItem("basket"));
+
     if (basket === null) {
       return;
     } else {
-      console.log(basket.items);
+      $("#items-count").text(`${basket.items.length} items`);
       basket.items.map((item) =>
         $(".pr-container").append(
           `  
@@ -73,7 +74,7 @@ $(document).ready(function () {
         </div>
     `)
   );
-
+  // Add product button
   $(`.add-product`).on("click", function () {
     var dataId = $(this).attr("data-id");
     const item = data.at(0).products.filter((item) => item.id === dataId);
