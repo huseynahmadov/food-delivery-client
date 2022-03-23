@@ -1,12 +1,21 @@
+/* 
+===================================
+Header section
+===================================
+*/
 .container {
   padding: 25px;
 }
-
+/* 
+===================================
+Main TOP
+===================================
+*/
 .main-container {
   border-bottom: 1px solid #f2f2f2;
 }
 
-.main-top {
+.main-container .main-top {
   height: 600px !important;
 }
 
@@ -16,7 +25,14 @@
   object-fit: cover;
 }
 
-.main-left h3 {
+.main-container .main-content {
+  padding: 30px 20px 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-content .mc-left h3 {
   font-size: 22px;
   line-height: 30px;
   letter-spacing: 0.03px;
@@ -24,29 +40,22 @@
   color: #4f4f4f;
 }
 
-.main-left p {
+.main-content .mc-left p {
   font-size: 14px;
   letter-spacing: 0.03px;
   font-weight: 500;
   color: #828282;
 }
 
-.main-content {
-  padding: 30px 20px 50px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main-content .main-right-flex {
+.main-content .mc-right {
   display: flex;
 }
 
-.main-middle {
+.main-content .mc-right .mcr-desc {
   margin-right: 50px;
 }
 
-.main-right-flex .main-middle p:first-child {
+.main-content .mc-right .mcr-desc p:first-child {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.03px;
@@ -54,18 +63,18 @@
   font-weight: 500;
 }
 
-.main-right-flex .main-middle p:nth-child(2) {
+.main-content .mc-right .mcr-desc p:nth-child(2) {
   letter-spacing: 0.03px;
   color: #828282;
   font-weight: 500;
 }
 
-.main-right {
+.main-content .mc-right .mcr-btns {
   margin-left: 50px;
   display: flex;
 }
 
-.main-right p {
+.main-content .mc-right .mcr-btns p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +87,7 @@
   cursor: pointer;
 }
 
-.main-right button {
+.main-content .mc-right .mcr-btns button {
   width: 72px;
   height: 51px;
   background-color: #d63626;
@@ -90,23 +99,32 @@
   cursor: pointer;
 }
 
-.main-right button:hover {
+.main-content .mc-right .mcr-btns button:hover {
   opacity: 0.8;
   transition: 0.4s ease-in-out;
 }
-
+/* 
+===================================
+Products section
+===================================
+*/
 .products {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 38px;
 }
-
+/* 
+===================================
+Products Left
+===================================
+*/
 .products-left {
   width: 60%;
   height: 446px;
   background-color: #f3f4f6;
   border-radius: 4px;
+  overflow-y: auto;
 }
 
 .products-left h3 {
@@ -119,20 +137,40 @@
   padding-bottom: 20px;
 }
 
-.products-left .product img {
-  width: 57px;
-  height: 53px;
-}
-
 .products-left .product {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.products-left .product div:first-child {
+.products-left .product img {
+  width: 53px;
+  height: 53px;
+  object-fit: contain;
+}
+
+.product .pr-left {
   display: flex;
-  margin: 30px;
+  align-items: center;
+  padding: 0 30px 30px;
+}
+
+.pr-left-desc {
+  margin-left: 30px;
+}
+
+.pr-left-desc p:first-child {
+  color: #4f4f4f;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+.pr-left-desc p:nth-child(2) {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #828282;
+  padding-top: 15px;
 }
 
 .btn-price {
@@ -157,59 +195,81 @@
   transition: 0.4s ease-in-out;
   color: #fff;
 }
-
-.products-container {
-  padding: 15px;
-}
+/* 
+===================================
+Products Right
+===================================
+*/
 
 .products-right {
   width: 35%;
   background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pr-container {
+  padding: 15px;
 }
 
 .products-right .product-count {
   border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
 }
 
 .products-right .product-count span {
   color: #d63626;
+  padding: 4px 10px 0px;
+  line-height: 40px;
 }
 
-.products-right .product-left {
+.products-right .product-item-desc {
   display: flex;
   align-items: center;
 }
-.products-right .product-right span {
+
+.product-item-desc div p:first-child {
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: #4f4f4f;
+  line-height: 30px;
+}
+.product-item-desc div p:nth-child(2) {
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: #4f4f4f;
+  font-size: 14px;
+}
+
+.products-right .product-item-count span {
   cursor: pointer;
 }
 
-.products-right .product-items .product-left div p {
+.products-right .product-item .product-item-desc div p {
   margin-left: 10px;
 }
 
-.products-right .product-left img {
+.products-right .product-item-desc img {
   width: 45px;
   height: 45px;
 }
 
-.product-items {
+.product-item {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  align-items: center;
   position: relative;
   flex-direction: row-reverse;
-  padding-bottom: 10px;
-}
-
-.product-items {
   border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
 }
 
-.product-items .delete-item img:hover {
+.product-item-delete img:hover {
   cursor: pointer;
 }
 
-.product-right {
+.product-item-count {
   background-color: #ffff;
   border-radius: 50px;
   width: 29px;
@@ -221,26 +281,17 @@
   font-size: 20px;
 }
 
-@media screen and (min-width: 1250px) and (max-width: 1400px) {
-  .product-right {
-    margin-left: 5rem;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .product-right {
-    margin-left: 10rem;
-  }
-}
 .checkout {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #d63626;
   border-radius: 100px;
   height: 47px;
-  width: 100%;
-  justify-content: space-between;
-  margin-top: 100px;
+  width: 90%;
+  margin: 0 auto;
   cursor: pointer;
+  margin-bottom: 10px;
   transition: ease-in-out 0.4s;
 }
 
@@ -255,6 +306,9 @@
 
 .checkout .checkout-title p {
   color: #ffff;
+  font-weight: 500;
+  line-height: 70px;
+  letter-spacing: 0.03em;
 }
 
 .checkout .checkout-total {
@@ -266,8 +320,22 @@
   text-align: center;
   padding: 10px;
   margin: 3px;
+  letter-spacing: 0.03em;
+  font-weight: 500;
 }
 
 .footer-bottom {
   margin-top: 70px;
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1400px) {
+  .product-item-count {
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .product-item-count {
+    margin-left: 10rem;
+  }
 }

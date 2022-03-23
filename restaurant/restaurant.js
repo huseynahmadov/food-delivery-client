@@ -7,12 +7,12 @@ $(document).ready(function () {
 
   data.at(0).products.map((item) =>
     $(".products-left").append(`
-        <div class="product" >
-        <div>
+        <div class="product">
+        <div class="pr-left">
             <img src="${item.img}" alt="" />
-        <div style="margin-left: 30px">
+        <div class="pr-left-desc">
             <p>${item.name}</p>
-            <p style="margin-top: 15px">
+            <p>
             ${item.desc}
             </p>
         </div>
