@@ -1,5 +1,6 @@
 $(document).ready(function () {
   const initialState = { items: [], totalPrice: 0, totalQuantity: 0 };
+
   const data = JSON.parse(localStorage.getItem("res"));
   let newItems = initialState.items.slice();
 

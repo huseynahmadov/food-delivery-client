@@ -143,18 +143,19 @@ Products Left
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 30px 30px;
 }
 
 .products-left .product img {
-  width: 53px;
-  height: 53px;
-  object-fit: contain;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
 }
 
 .product .pr-left {
   display: flex;
   align-items: center;
-  padding: 0 30px 30px;
+  width: 75%;
 }
 
 .pr-left-desc {
@@ -179,7 +180,7 @@ Products Left
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 30px;
+  width: 25%;
 }
 
 .btn-price button {
@@ -255,8 +256,9 @@ Products Right
 }
 
 .products-right .product-item-desc img {
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 .product-item {

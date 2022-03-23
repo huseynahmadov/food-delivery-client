@@ -10,16 +10,16 @@ export const restaurants = [
     products: [
       {
         id: "p1",
-        name: "cappucino",
-        price: 5,
+        name: "Americano 200 ml",
+        price: 2.5,
         quantity: 1,
         desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, labore.",
         img: "/public/images/restaurants/coffee-mania.png",
       },
       {
         id: "p2",
-        name: "cappucino",
-        price: 5,
+        name: "Latte 200 ml",
+        price: 2.5,
         quantity: 1,
         desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, labore.",
         img: "/public/images/restaurants/coffee-mania.png",
