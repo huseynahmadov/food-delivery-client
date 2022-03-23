@@ -64,7 +64,7 @@ export const restaurants = [
   },
   {
     id: "r4",
-    name: "Maharaja Restaurant",
+    name: "Maharaja",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,

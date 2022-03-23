@@ -17,7 +17,7 @@ li {
 }
 
 li:hover {
-  transform: scale(1.02);
+  opacity: 0.7;
   transition: ease-in-out 0.4s;
 }
 
@@ -26,7 +26,6 @@ a {
 }
 
 a:hover {
-  
   color: #d63626;
 }
 
@@ -169,7 +168,7 @@ Footer
 
 .fb-left > p {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #828282;
@@ -211,7 +210,6 @@ Footer
 
 .fb-right .list li a {
   font-weight: 900;
-  font-size: 18px;
   line-height: 30px;
   color: #828282;
 }
