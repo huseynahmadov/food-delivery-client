@@ -32,9 +32,9 @@ $(document).ready(function () {
       return;
     } else {
       $("#items-count").text(`${basket.items.length} items`);
-      $(".pr-container").empty();
+      $(".product-list").empty();
       basket.items.map((item) => {
-        $(".pr-container").append(
+        $(".product-list").append(
           `  
           <div class="product-item">
           <div class="product-item-delete" data-id="${item.id}">
@@ -93,6 +93,10 @@ $(document).ready(function () {
     const item = data.at(0).products.filter((item) => item.id === dataId);
     addProductHandler(item.at(0));
   });
+
+  
+
+
   // Delete product button
   $(document).on("click", ".product-item-delete", function () {
     var dataId = $(this).attr("data-id");

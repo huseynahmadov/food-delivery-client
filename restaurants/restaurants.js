@@ -1,4 +1,4 @@
-import { restaurants } from "./mock.js";
+import { restaurants } from "../restaurants/mock.js";
 
 const categoryItems = [];
 
