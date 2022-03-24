@@ -42,9 +42,9 @@ $(document).ready(function () {
             <img src="/public/images/deleteitem.svg" alt="" />
           </div>
           <div class="product-item-count">
-            <span>+</span>
+            <span id="addItem" data-id="${item.id}">+</span>
             <p>${item.quantity}</p>
-            <span>-</span>
+            <span id="removeItem" >-</span>
           </div>
           <div class="product-item-desc">
             <img src="${item.img}" alt="" />
@@ -67,28 +67,24 @@ $(document).ready(function () {
       existingItem = initialState.items.find(
         (product) => product.id === item.id
       );
-      // console.log(existingItem);
-      // console.log("1");
     } else {
       initialState = basket;
       existingItem = initialState.items.find(
         (product) => product.id === item.id
       );
-      // console.log(existingItem);
-      // console.log("2");
     }
 
     if (!existingItem) {
       initialState.items.push(item);
       initialState.totalQuantity = initialState.totalQuantity + 1;
-      initialState.totalPrice = initialState.totalPrice + item.price;
+      initialState.totalPrice = +(initialState.totalPrice + item.price).toFixed(
+        2
+      );
       localStorage.setItem("basket", JSON.stringify(initialState));
       updateBasket();
     } else {
       const newItem = existingItem;
-      console.log(newItem);
       const index = basket.items.findIndex((item) => item.id === newItem.id);
-      console.log(index);
       const newBasket = basket;
       newItem.price = +(newItem.price + item.price).toFixed(2);
       newItem.quantity = newItem.quantity + 1;
@@ -106,7 +102,6 @@ $(document).ready(function () {
     const basket = JSON.parse(localStorage.getItem("basket"));
     const removedItem = basket.items.filter((item) => item.id !== id);
     const existingItem = basket.items.find((item) => item.id === id);
-    console.log(existingItem);
     basket.items = removedItem;
     basket.totalQuantity = initialState.totalQuantity - existingItem.quantity;
     basket.totalPrice = +(initialState.totalPrice - existingItem.price).toFixed(
@@ -115,13 +110,12 @@ $(document).ready(function () {
     initialState = basket;
     localStorage.setItem("basket", JSON.stringify(initialState));
     updateBasket();
-    console.log(basket.totalPrice);
-    console.log(removedItem.price);
   };
 
   // Add product button
-  $(document).on("click", ".add-product", function () {
+  $(document).on("click", ".add-product, #addItem", function () {
     var dataId = $(this).attr("data-id");
+    console.log(dataId);
     const item = data.at(0).products.filter((item) => item.id === dataId);
     addProductHandler(item.at(0));
   });
