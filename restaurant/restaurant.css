@@ -217,7 +217,8 @@ Products Right
   align-items: center;
   gap: 10px;
   color: #d63626;
-  letter-spacing: .03em;
+  padding-bottom: 10px;
+  letter-spacing: 0.03em;
   font-weight: 500;
   border-bottom: 1px solid #e0e0e0;
 }
@@ -226,10 +227,8 @@ Products Right
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 95%;
+  height: 91%;
 }
-
-
 
 .products-right .product-item-desc {
   display: flex;
@@ -299,7 +298,7 @@ Products Right
   width: 90%;
   margin: 0 auto;
   cursor: pointer;
-  margin-bottom: 10px;
+
   transition: ease-in-out 0.4s;
 }
 

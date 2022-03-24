@@ -31,7 +31,8 @@ $(document).ready(function () {
     if (basket === null) {
       return;
     } else {
-      $("#items-count").text(`${basket.items.length} items`);
+      $("#items-count").text(`${basket.totalQuantity} items`);
+      $("#totalPrice").text(`$${basket.totalPrice}`);
       $(".product-list").empty();
       basket.items.map((item) => {
         $(".product-list").append(
@@ -42,7 +43,7 @@ $(document).ready(function () {
           </div>
           <div class="product-item-count">
             <span>+</span>
-            <p>1</p>
+            <p>${item.quantity}</p>
             <span>-</span>
           </div>
           <div class="product-item-desc">
@@ -60,31 +61,62 @@ $(document).ready(function () {
   // Add product button
   const addProductHandler = (item) => {
     const basket = JSON.parse(localStorage.getItem("basket"));
+    let existingItem;
 
     if (basket === null) {
-      newItems.push(item);
-      initialState.items = newItems.slice();
+      existingItem = initialState.items.find(
+        (product) => product.id === item.id
+      );
+      // console.log(existingItem);
+      // console.log("1");
+    } else {
+      initialState = basket;
+      existingItem = initialState.items.find(
+        (product) => product.id === item.id
+      );
+      // console.log(existingItem);
+      // console.log("2");
+    }
+
+    if (!existingItem) {
+      initialState.items.push(item);
+      initialState.totalQuantity = initialState.totalQuantity + 1;
+      initialState.totalPrice = initialState.totalPrice + item.price;
       localStorage.setItem("basket", JSON.stringify(initialState));
-      newItems = [];
       updateBasket();
     } else {
-      const newBasket = basket.items;
-      newItems.push(item);
-      initialState.items = newBasket.concat(newItems);
+      const newItem = existingItem;
+      console.log(newItem);
+      const index = basket.items.findIndex((item) => item.id === newItem.id);
+      console.log(index);
+      const newBasket = basket;
+      newItem.price = +(newItem.price + item.price).toFixed(2);
+      newItem.quantity = newItem.quantity + 1;
+      newBasket.items[index] = newItem;
+      newBasket.totalQuantity = newBasket.totalQuantity + 1;
+      newBasket.totalPrice = +(newBasket.totalPrice + item.price).toFixed(2);
+      console.log(newBasket.totalPrice);
+      initialState = newBasket;
       localStorage.setItem("basket", JSON.stringify(initialState));
-      newItems = [];
       updateBasket();
     }
-    // const existingItem = basket.items.find((items) => console.log(items));
   };
 
   const deleteItemFromBasket = (id) => {
     const basket = JSON.parse(localStorage.getItem("basket"));
     const removedItem = basket.items.filter((item) => item.id !== id);
+    const existingItem = basket.items.find((item) => item.id === id);
+    console.log(existingItem);
     basket.items = removedItem;
+    basket.totalQuantity = initialState.totalQuantity - existingItem.quantity;
+    basket.totalPrice = +(initialState.totalPrice - existingItem.price).toFixed(
+      2
+    );
     initialState = basket;
     localStorage.setItem("basket", JSON.stringify(initialState));
     updateBasket();
+    console.log(basket.totalPrice);
+    console.log(removedItem.price);
   };
 
   // Add product button
@@ -93,9 +125,6 @@ $(document).ready(function () {
     const item = data.at(0).products.filter((item) => item.id === dataId);
     addProductHandler(item.at(0));
   });
-
-  
-
 
   // Delete product button
   $(document).on("click", ".product-item-delete", function () {
