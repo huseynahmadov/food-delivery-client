@@ -7,6 +7,10 @@
   overflow-x: hidden;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .main-wrapper {
   display: flex;
   justify-content: space-between;
@@ -415,7 +419,7 @@
     justify-content: space-around
   }
   .card  {
-    width: 22% !important;
+    width: 30% !important;
   }
 
   .card img {
@@ -431,7 +435,63 @@
   }
 }
 
-@media (max-width: 992px) {
-  .description-right {
+@media (max-width: 768px) {
+
+  .description-section {
+    padding: 0 15px;
+  }
+
+  .description-right .kfc-image, .description-right .pizza-image {
+    width: 200px !important;
+    background-color: #fff !important;
+   
+  }
+
+  .description-right .kfc-image img, .pizza-image img{
+    width: 300px !important;
+  }
+
+  .cards .card{
+    width: 30% !important;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .description-section {
+    padding: 0;
+  }
+
+  .description-right .kfc-image, .pizza-image {
+    background-color: #ffffff;
+  }
+
+  .description-right .kfc-image img, .pizza-image img{
+    width: 300px !important;
+  }
+
+  .cards .card{
+    width: 45% !important;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 414px) {
+
+  .description-section {
+    padding: 0 15px;
+  }
+
+  .description-right .kfc-image, .pizza-image {
+    background-color: #ffffff;
+  }
+
+  .description-right .kfc-image img, .pizza-image img{
+    width: 300px !important;
+  }
+
+  .cards .card{
+    width: 45% !important;
+    margin-top: 30px;
   }
 }
