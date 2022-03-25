@@ -100,6 +100,18 @@ Header
   height: 20px;
 }
 
+.foody-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.flags {
+  margin-top: 30px;
+}
+
 .logo-flag {
   display: flex;
   flex-direction: column;
@@ -207,12 +219,15 @@ Footer
 
 .footer-bottom {
   width: 100%;
-  height: 100%;
+  height: auto;
   background: #181617;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+
+
 
 .footer-bottom-wrapper {
   width: 100%;
@@ -224,6 +239,27 @@ Footer
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 901px) {
+  .footer-bottom-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fb-left {
+    margin-bottom: 50px;
+
+  }
+
+  .list ul h3 {
+    font-size: 470px;
+  }
+
+  .list ul li a {
+    font-size: 15px;
+  }
 }
 
 .fb-left {
@@ -273,6 +309,11 @@ Footer
 .fb-right ul {
   /* padding-left: 15rem; */
 }
+
+.fb-right .list{
+  margin-right: 50px;
+}
+
 .fb-right .list h3 {
   color: #ffffff;
   font-size: 20px;
@@ -338,4 +379,46 @@ Footer
   .hamburger-menu ul li {
     margin-top: 20px;
   }
+}
+
+
+@media screen and (max-width: 901px) {
+  .footer-bottom-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ft-left img {
+    width: 70% !important;
+  }
+
+  .ft-right img {
+    width: 80% !important;
+  }
+
+  .ft-center h2 {
+    font-size: 120% !important;
+  }
+
+  .fb-left {
+    margin-bottom: 50px;
+
+  }
+
+  .list ul h3 {
+    font-size: 470px;
+  }
+
+  .list ul li a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .fb-right {
+    display: none;
+  }
+
 }
