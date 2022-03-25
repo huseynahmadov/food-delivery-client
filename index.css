@@ -450,14 +450,20 @@ body {
   .description-right .kfc-image img, .pizza-image img{
     width: 300px !important;
   }
-
+  .cards {
+    flex-direction: column;
+  }
   .cards .card{
-    width: 30% !important;
+    width: 100% !important;
+    margin-top: 30px;
   }
 }
 
 @media (max-width: 576px) {
 
+  .features-section {
+    padding: 0 40px;
+  }
   .description-section {
     padding: 0;
   }
@@ -470,9 +476,13 @@ body {
     width: 300px !important;
   }
 
+  .cards {
+    flex-direction: column;
+  }
   .cards .card{
-    width: 45% !important;
+    width: 100% !important;
     margin-top: 30px;
+    
   }
 }
 
