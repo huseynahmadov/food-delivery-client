@@ -306,6 +306,8 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+ 
   /* Header */
   header {
     margin-bottom: 0px;
@@ -364,7 +366,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
   }
   .description-section-pizza {
     flex-direction: column-reverse;
@@ -373,8 +374,60 @@
     width: 100% !important;
     margin-bottom: 80px;
   }
+
+  .description-left h2 {
+    font-size: 40px !important;
+    text-align: center;
+  }
+
+  .description-left p {
+    font-size: 18px !important;
+    text-align: center;
+  }
   .description-right {
     width: 80% !important;
+  }
+
+  .description-right .kfc-image{
+    width: 40% !important;
+    height: 400px !important;
+  }
+
+  .description-right .pizza-image{
+    width: 40% !important;
+    height: 400px !important;
+  }
+
+  
+
+  .features-section p:first-child {
+    font-size: 40px !important;
+    text-align: center;
+  }
+
+  .features-section p:nth-child(2) {
+    font-size: 18px !important;
+    text-align: center;
+  }
+
+  .features-section .cards {
+    display: flex;
+    justify-content: space-around
+  }
+  .card  {
+    width: 22% !important;
+  }
+
+  .card img {
+    width: 70%;
+  }
+
+  .card p:nth-child(2) {
+    font-size: 21px !important;
+  }
+
+  .card p:nth-child(3) {
+    font-size: 16px !important;
   }
 }
 

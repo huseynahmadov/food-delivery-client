@@ -292,6 +292,27 @@ Footer
   .header-container-wrapper {
     padding: 10px !important;
   }
+
+  .header-left,
+  .header-right {
+    display: none;
+  }
+  .toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-menu ul {
+    margin: 50px;
+  }
+
+  .hamburger-menu ul li {
+    margin-top: 20px;
+  }
 }
 @media (max-width: 992px) {
   header {
