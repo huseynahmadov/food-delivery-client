@@ -82,6 +82,7 @@
 .main-wrapper-left {
   width: 55%;
 }
+
 .main-wrapper-right {
   width: 40%;
   padding: 15px 0px 15px 30px;
@@ -98,8 +99,8 @@
 
 .features-section {
   margin-top: 42px;
-  height: 100vh;
   padding: 0 25px;
+  margin-bottom: 200px;
 }
 .features-section > p:first-child {
   font-size: 40px;
@@ -122,7 +123,7 @@
   font-weight: 400;
   text-align: center;
   margin-top: 20px;
-  width: 780px;
+  max-width: 780px;
   margin: 0 auto;
   margin-bottom: 45px;
   line-height: 30px;
@@ -177,6 +178,7 @@
 .description-section {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 150px;
   padding: 0 90px;
 }
@@ -301,4 +303,82 @@
 
 .footer-bottom-wrapper {
   padding: 245px 5rem 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Header */
+  header {
+    margin-bottom: 0px;
+  }
+  .container {
+    height: auto;
+    padding: 0px;
+  }
+  .main-wrapper {
+    flex-direction: column-reverse;
+  }
+  .main-wrapper-left {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .main-wrapper-left > h1 {
+    font-size: 35px;
+    line-height: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .main-wrapper-left > p {
+    display: none;
+  }
+
+  .main-wrapper-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main-wrapper-buttons button {
+    width: 168px !important;
+    height: 40px !important;
+  }
+
+  .main-wrapper-buttons button:nth-child(2) {
+    margin-left: 0px !important;
+  }
+
+  .main-wrapper-right {
+    width: 50%;
+    padding: 0px;
+    margin-bottom: 20px;
+  }
+
+  .main-wrapper-img {
+    border-radius: 110px;
+    background: transparent;
+  }
+  .main-wrapper-img img {
+    margin-left: 0px;
+  }
+  /* Main */
+  .description-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .description-section-pizza {
+    flex-direction: column-reverse;
+  }
+  .description-left {
+    width: 100% !important;
+    margin-bottom: 80px;
+  }
+  .description-right {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .description-right {
+  }
 }

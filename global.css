@@ -11,7 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-
 li {
   transition: ease-in-out 0.4s;
   list-style: none;
@@ -63,7 +62,6 @@ Header
 
 .header-container-wrapper {
   background: #f3f4f6;
-  height: 100%;
   width: 100%;
   /* padding: 40px 57px; */
   border-radius: 4px;
@@ -74,15 +72,15 @@ Header
 }
 
 .toggle img {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
 }
 
 .hamburger-menu {
-  transition: .4s ease all;
+  transition: 0.4s ease all;
   display: none;
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   height: 100%;
   background-color: #fff;
@@ -174,7 +172,8 @@ header {
 nav {
   margin-left: 60px;
 }
-nav ul, .hamburger-menu ul {
+nav ul,
+.hamburger-menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,7 +184,8 @@ nav ul li {
   padding-left: 35px;
 }
 
-nav ul li a, .hamburger-menu ul li a{
+nav ul li a,
+.hamburger-menu ul li a {
   text-decoration: none;
   color: #828282;
 }
@@ -194,11 +194,10 @@ nav ul li a, .hamburger-menu ul li a{
   flex-direction: column;
 }
 
-nav ul li a:hover, .hamburger-menu ul {
+nav ul li a:hover,
+.hamburger-menu ul {
   transition: 0.3s ease-in-out;
 }
-
-
 
 /* 
 =================================
@@ -286,12 +285,20 @@ Footer
   color: #828282;
 }
 
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 10px !important ;
+  }
+  .header-container-wrapper {
+    padding: 10px !important;
+  }
+}
 @media (max-width: 992px) {
-
   header {
     position: relative;
   }
-  .header-left, .header-right {
+  .header-left,
+  .header-right {
     display: none;
   }
   .toggle {
@@ -311,4 +318,3 @@ Footer
     margin-top: 20px;
   }
 }
-
