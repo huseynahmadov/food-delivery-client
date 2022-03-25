@@ -153,10 +153,11 @@ Footer
   padding: 5rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .fb-left {
-  flex: 1;
+  max-width: 400px;
 }
 
 .fb-left > img {
@@ -194,13 +195,13 @@ Footer
 }
 
 .fb-right {
-  flex: 2;
+  max-width: 500px;
   display: flex;
   justify-content: flex-end;
 }
 
 .fb-right ul {
-  padding-left: 15rem;
+  /* padding-left: 15rem; */
 }
 .fb-right .list h3 {
   color: #ffffff;
