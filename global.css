@@ -11,6 +11,7 @@ body {
   overflow-x: hidden;
 }
 
+
 li {
   transition: ease-in-out 0.4s;
   list-style: none;
@@ -68,6 +69,69 @@ Header
   border-radius: 4px;
 }
 
+.toggle {
+  display: none;
+}
+
+.toggle img {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburger-menu {
+  transition: .4s ease all;
+  display: none;
+  position: fixed;
+  top:0;
+  left: 0;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+  transform: translateX(-100%);
+  width: 75%;
+}
+
+.hamburger-menu .close {
+  cursor: pointer;
+  float: right;
+  margin: 30px;
+}
+
+.hamburger-menu .close img {
+  width: 20px;
+  height: 20px;
+}
+
+.logo-flag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.logo-flag button {
+  width: 115px;
+  height: 41px;
+  background-color: #d63626;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.logo-flag button a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo-flag button:hover {
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -110,7 +174,7 @@ header {
 nav {
   margin-left: 60px;
 }
-nav ul {
+nav ul, .hamburger-menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,13 +185,20 @@ nav ul li {
   padding-left: 35px;
 }
 
-nav ul li a {
+nav ul li a, .hamburger-menu ul li a{
   text-decoration: none;
   color: #828282;
 }
-nav ul li a:hover {
+
+.hamburger-menu ul {
+  flex-direction: column;
+}
+
+nav ul li a:hover, .hamburger-menu ul {
   transition: 0.3s ease-in-out;
 }
+
+
 
 /* 
 =================================
@@ -213,3 +284,30 @@ Footer
   line-height: 30px;
   color: #828282;
 }
+
+@media (max-width: 992px) {
+
+  header {
+    position: relative;
+  }
+  .header-left, .header-right {
+    display: none;
+  }
+  .toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-menu ul {
+    margin: 50px;
+  }
+
+  .hamburger-menu ul li {
+    margin-top: 20px;
+  }
+}
+
