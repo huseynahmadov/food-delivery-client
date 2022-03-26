@@ -116,6 +116,8 @@ Products section
   width: 100%;
   margin-top: 38px;
 }
+
+
 /* 
 ===================================
 Products Left
@@ -345,5 +347,60 @@ Products Right
   .product-item-count {
     margin-left: auto;
     margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .products {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 38px;
+  }
+
+
+  .products-left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .products-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .main-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mc-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .mc-right {
+    width: 100%;
+  }
+
+  .mcr-btns {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .mc-right {
+    flex-direction: column;
+  }
+
+  .mcr-btns {
+    margin-top: 30px;
   }
 }
