@@ -4,7 +4,6 @@
 .container {
   padding: 25px;
   height: 100vh;
-  overflow-x: hidden;
 }
 
 body {
@@ -310,8 +309,6 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-
- 
   /* Header */
   header {
     margin-bottom: 0px;
@@ -392,17 +389,15 @@ body {
     width: 80% !important;
   }
 
-  .description-right .kfc-image{
+  .description-right .kfc-image {
     width: 40% !important;
     height: 400px !important;
   }
 
-  .description-right .pizza-image{
+  .description-right .pizza-image {
     width: 40% !important;
     height: 400px !important;
   }
-
-  
 
   .features-section p:first-child {
     font-size: 40px !important;
@@ -416,9 +411,9 @@ body {
 
   .features-section .cards {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
   }
-  .card  {
+  .card {
     width: 30% !important;
   }
 
@@ -436,71 +431,71 @@ body {
 }
 
 @media (max-width: 768px) {
-
   .description-section {
     padding: 0 15px;
+    margin-bottom: 0px;
   }
-
-  .description-right .kfc-image, .description-right .pizza-image {
+  .description-left {
+    margin-bottom: 50px;
+  }
+  .description-right .kfc-image,
+  .description-right .pizza-image {
     width: 200px !important;
     background-color: #fff !important;
-   
   }
 
-  .description-right .kfc-image img, .pizza-image img{
+  .description-right .kfc-image img,
+  .pizza-image img {
     width: 300px !important;
   }
   .cards {
     flex-direction: column;
   }
-  .cards .card{
+  .cards .card {
     width: 100% !important;
     margin-top: 30px;
   }
 }
 
 @media (max-width: 576px) {
-
   .features-section {
     padding: 0 40px;
   }
   .description-section {
-    padding: 0;
+    padding: 0 15px;
   }
 
-  .description-right .kfc-image, .pizza-image {
+  .description-right .kfc-image,
+  .pizza-image {
     background-color: #ffffff;
   }
 
-  .description-right .kfc-image img, .pizza-image img{
+  .description-right .kfc-image img,
+  .pizza-image img {
     width: 300px !important;
   }
 
   .cards {
     flex-direction: column;
   }
-  .cards .card{
+  .cards .card {
     width: 100% !important;
     margin-top: 30px;
-    
   }
 }
 
 @media (max-width: 414px) {
-
-  .description-section {
-    padding: 0 15px;
-  }
-
-  .description-right .kfc-image, .pizza-image {
+  .description-right .kfc-image,
+  .pizza-image {
     background-color: #ffffff;
   }
 
-  .description-right .kfc-image img, .pizza-image img{
+  .description-right .kfc-image img,
+  .pizza-image img {
     width: 300px !important;
   }
 
-  .cards .card{
+  .cards .card {
     width: 45% !important;
     margin-top: 30px;
   }

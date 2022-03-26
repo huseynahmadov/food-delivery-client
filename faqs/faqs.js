@@ -17,7 +17,7 @@ $(document).ready(function () {
 });
 
 questions.map((item) => {
-  $(".faqs").append(`<div class="acc">
+  $(".faqs-wrapper").append(`<div class="acc">
     <div class="acc-header">
         <h3>${item.question}</h3>
         <span class="plus" id="plus" data-id="${item.id}"><i class="fa-solid fa-plus"></i></span>
