@@ -86,7 +86,10 @@ Faqs container
   color: #828282;
   height: auto;
 }
-
+.color {
+  color: red;
+  background-color: antiquewhite;
+}
 .active {
   height: 80px !important;
   overflow-y: hidden !important;
