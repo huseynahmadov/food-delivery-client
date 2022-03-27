@@ -25,6 +25,11 @@ $(document).ready(function () {
       `)
     );
   };
+
+  const showProductsDetails = () => {
+    $('.cover-photo').attr('src', `${data[0].coverPhoto}`)
+  }
+  showProductsDetails();
   // Update & display basket
   const updateBasket = () => {
     const basket = JSON.parse(localStorage.getItem("basket"));
@@ -129,3 +134,5 @@ $(document).ready(function () {
   updateBasket();
   showProductHandler();
 });
+
+

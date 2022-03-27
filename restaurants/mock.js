@@ -1,6 +1,7 @@
 export const restaurants = [
   {
     id: "r1",
+    coverPhoto: '/public/images/Coffeemania-large.jpg',
     name: "Coffee Mania",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
@@ -28,6 +29,7 @@ export const restaurants = [
   },
   {
     id: "r2",
+    coverPhoto: "../public/images/burger-king-large.svg.png",
     name: "Burger King",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
@@ -55,6 +57,7 @@ export const restaurants = [
   },
   {
     id: "r3",
+    coverPhoto: '../public/images/mcdonalds-large.jpg',
     name: "Mc Donalds",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
@@ -64,6 +67,7 @@ export const restaurants = [
   },
   {
     id: "r4",
+    coverPhoto: '/public/images/maharaja-large.webp',
     name: "Maharaja",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
@@ -73,6 +77,7 @@ export const restaurants = [
   },
   {
     id: "r5",
+    coverPhoto: '/public/images/dera-large.jpg',
     name: "Dera Restaurant",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
@@ -83,6 +88,7 @@ export const restaurants = [
   {
     id: "r6",
     name: "Hong Kong",
+    coverPhoto: '/public/images/hongkong-large.jpg',
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
     delivery: 9,
@@ -91,6 +97,7 @@ export const restaurants = [
   },
   {
     id: "r7",
+    coverPhoto: '/public/images/papajohns-large.svg',
     name: "Papa Johns",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
@@ -100,6 +107,7 @@ export const restaurants = [
   },
   {
     id: "r8",
+    coverPhoto: '/public/images/dominos-large.png',
     name: "Dominos",
     dess: "chinese, sea-food, thai, lebanese, caribbean",
     price: 5,
