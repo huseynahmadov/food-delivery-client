@@ -160,6 +160,12 @@ Products Left
   width: 75%;
 }
 
+.pr-left img {
+  border-radius: 99px;
+  width: 100px !important;
+  height: 100px !important;
+}
+
 .pr-left-desc {
   margin-left: 30px;
 }
