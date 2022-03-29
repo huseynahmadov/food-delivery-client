@@ -2,7 +2,7 @@ $(document).ready(function () {
   let initialState = { items: [], totalPrice: 0, totalQuantity: 0 };
   const data = JSON.parse(localStorage.getItem("res"));
   let newItems = initialState.items.slice();
-  console.log(data);
+
   // Display products
   const showProductHandler = () => {
     return data.at(0).products.map((item) =>
@@ -25,6 +25,14 @@ $(document).ready(function () {
       `)
     );
   };
+
+  const showProductsDetails = () => {
+    $('.cover-photo').attr('src', `${data[0].coverPhoto}`);
+    $('.restaurant-name').html(`${data[0].name}`);
+    $('.restaurant-address').html(`${data[0].address}`);
+    $('.restaurant-desc').html(`${data[0].dess}`);
+  }
+  showProductsDetails();
   // Update & display basket
   const updateBasket = () => {
     const basket = JSON.parse(localStorage.getItem("basket"));
@@ -129,3 +137,5 @@ $(document).ready(function () {
   updateBasket();
   showProductHandler();
 });
+
+
