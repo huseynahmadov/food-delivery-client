@@ -2,7 +2,7 @@ $(document).ready(function () {
   let initialState = { items: [], totalPrice: 0, totalQuantity: 0 };
   const data = JSON.parse(localStorage.getItem("res"));
   let newItems = initialState.items.slice();
-
+  console.log(data);
   // Display products
   const showProductHandler = () => {
     return data.at(0).products.map((item) =>
